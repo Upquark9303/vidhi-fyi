@@ -43,3 +43,7 @@ function burst(x,y){
   s.style.left=x+'px';s.style.top=y+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),1000);
 }
 document.addEventListener('click',e=>{if(e.target.closest('.travel-card,.post'))burst(e.clientX,e.clientY);});
+
+// glass touch
+document.querySelectorAll('.card,.post,.travel-card,.interests,.tilt').forEach(el=>el.classList.add('glass'));
+

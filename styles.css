@@ -60,3 +60,8 @@ footer{border-top:2px solid var(--ink);padding:20px;text-align:center;color:var(
 @keyframes floatUp{to{transform:translateY(-80px);opacity:0}}
 @media(max-width:860px){.hero{grid-template-columns:1fr}.grid2,.grid3{grid-template-columns:1fr}.quick-facts{grid-template-columns:1fr 1fr}.tabs{flex-wrap:nowrap;overflow-x:auto}.tab-btn{white-space:nowrap}}
 @media(max-width:640px){.quick-facts{grid-template-columns:1fr}.cta .btn{flex:1 1 100%;text-align:center}}
+
+.glass{background:rgba(255,255,255,.55)!important;backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border:2px solid rgba(255,255,255,.7)!important;box-shadow:0 8px 32px rgba(124,108,240,.18),5px 5px 0 var(--line)!important}
+.card.glass:hover{box-shadow:0 12px 40px rgba(124,108,240,.28),7px 7px 0 var(--accent3)!important}
+.nav{border-bottom:2px solid rgba(255,255,255,.6)!important}
+
