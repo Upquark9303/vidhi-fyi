@@ -65,3 +65,6 @@ footer{border-top:2px solid var(--ink);padding:20px;text-align:center;color:var(
 .card.glass:hover{box-shadow:0 12px 40px rgba(124,108,240,.28),7px 7px 0 var(--accent3)!important}
 .nav{border-bottom:2px solid rgba(255,255,255,.6)!important}
 
+
+@media(max-width:860px){.hero-photo{order:-1}.hero-photo img{aspect-ratio:4/4;max-height:380px}}
+
