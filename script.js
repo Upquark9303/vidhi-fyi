@@ -47,3 +47,7 @@ document.addEventListener('click',e=>{if(e.target.closest('.travel-card,.post'))
 // glass touch
 document.querySelectorAll('.card,.post,.travel-card,.interests,.tilt').forEach(el=>el.classList.add('glass'));
 
+
+// Greece card scrolls to full story
+document.querySelectorAll('[data-story]').forEach(c=>c.addEventListener('click',()=>{const t=document.getElementById(c.dataset.story);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}));
+
