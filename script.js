@@ -48,6 +48,6 @@ document.addEventListener('click',e=>{if(e.target.closest('.travel-card,.post'))
 document.querySelectorAll('.card,.post,.travel-card,.interests,.tilt').forEach(el=>el.classList.add('glass'));
 
 
-// Greece card scrolls to full story
-document.querySelectorAll('[data-story]').forEach(c=>c.addEventListener('click',()=>{const t=document.getElementById(c.dataset.story);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}));
+// travel cards open the matching story
+document.querySelectorAll('[data-story]').forEach(c=>c.addEventListener('click',()=>{const panel=document.getElementById('tab-travel');const btn=panel?panel.querySelector('.subtabs .subtab-btn[data-subtab="'+c.dataset.story+'"]'):null;if(btn)btn.click();const t=document.getElementById('sub-'+c.dataset.story);if(t)t.scrollIntoView({behavior:'smooth',block:'start'});}));
 
